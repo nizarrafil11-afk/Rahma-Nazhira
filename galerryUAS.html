@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>galerry</title>
+    <style>
+       table {margin: auto;border-collapse: collapse;}
+    td {padding: 15px;}
+    img {width: 250px;height: 300px;border-radius: 10px;}
+    .caption {margin-top: 5px;font-size: 14px;}
+   </style>
+</head>
+<body bgcolor="white" width="900">
+          <table width="1000" height="250" align="center" bgcolor="#C7A07A" cellpadding="15">
+             <!-- Banner-->
+            <tr>
+            <td bgcolor="#FADCE9" height="250" align="center" background="img/bgUAS2.jpeg" valign="middle">
+            </td>
+          </tr>
+                <!-- Letak Menu/Navigasi -->
+                  <tr>
+            <td bgcolor="white" height="15" align="right">
+                <a href="homeUAS.html">Home</a>
+                <a href="artikelUAS.html">Artikel</a>
+                <a href="galerryUAS.html">Galerry</a>  
+                <a href="contactUAS.html">Contact Us</a>
+                <a href="aboutusUAS.html">About Us</a>
+              
+                </td>
+                </tr>
+                <td bgcolor="#E7BC91">
+    
+    <h1 align="center">Ghazwah</h1>
+    <h2 align="center">Tampil Anggun dan Nyaman Bersama Koleksi Hijab Pilihan</h2>
+   <table>
+   <h2 align="center"><u>HIjab BAsic</u></h2>
+  <tr>
+    <td>
+      <img src="img/1.jpeg" alt="Cleanser">
+      <div class="caption"> Vischose Army</div>
+    </td>
+    <td>
+      <img src="img/2.jpeg" alt="Toner">
+      <div class="caption"> Vischose Grey</div>
+    </td>
+    <td>
+      <img src="img/3.jpeg" alt="serum">
+      <div class="caption">Vischose Silver</div>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <img src="img/4.jpeg" alt="mois">
+      <div class="caption">Paris Taupe</div>
+    </td>
+    <td>
+      <img src="img/5.jpeg" alt="sunscreen">
+      <div class="caption">Paris Broken White</div>
+    </td>
+    <td>
+      <img src="img/6.jpeg" alt="expoli">
+      <div class="caption">Paris Mouve</div>
+    </td>
+    </tr>
+    </table>
+    <!-- Elemen HTML -->
+<button onclick="tambahSuka()">❤️ Suka</button>
+<p>Disukai oleh: <span id="jumlahSuka">0</span> orang</p>
+
+<!-- JavaScript -->
+<script>
+    let angka = 0; // Angka awal
+
+    function tambahSuka() {
+        angka = angka + 1; // Menambah angka 1 setiap diklik
+        
+        // Memasukkan angka baru ke dalam teks HTML
+        document.getElementById("jumlahSuka").innerHTML = angka;
+    }
+</script>
+
+    <table
+     <!-- Letak Footer -->
+         <tr>
+            <td bgcolor="white" width="1000" height="15" align="center" valign="bottom">
+                <b>Copyright &copy; 2026 - Rahma Nazhira  [251011750234]</b>
+
+            </td>
+         </tr>
+         </td>
+    </table>
+</body>
+</html>
