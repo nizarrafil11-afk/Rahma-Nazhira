@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <style>
+       
+      </style>
+</head>
+<body bgcolor="white" width="900">
+          <table width="1000" height="250" align="center" bgcolor="#C7A07A" cellpadding="15">
+             <!-- Banner-->
+            <tr>
+                <td width="900" align="center" >
+          <img src="img/banneruas.jpeg" width="960" height="430" align="center" cellpadding="15">
+                </td>
+                </tr>
+                <!-- Letak Menu/Navigasi -->
+                  <tr>
+            <td bgcolor="white" height="15" align="right">
+                <a href="homeUAS.html">Home</a>
+                <a href="artikelUAS.html">Artikel</a>
+                <a href="galerryUAS.html">Gallery</a>  
+                <a href="contactUAS.html">Contact Us</a>
+                <a href="aboutusUAS.html">About Us</a>
+                
+                </td>
+                </tr>
+                <td bgcolor="#E7BC91">
+    
+    <h1 align="center">Ghazwah</h1>
+    <h2 align="center">Hijab Cantik, Nyaman, dan Sesuai Gaya Kamu</h2>
+       <p>Kami percaya hijab bukan sekadar penutup kepala yang wajib dikenakan. Lebih dari itu, hijab adalah mahkota keanggunan, cermin keyakinan diri, serta identitas terindah yang kamu banggakan. Ia menjadi cara kamu mengekspresikan diri, menjaga kehormatan, dan tampil bersinar dengan cara yang paling tulus.</p>
+       <p>Banyak dari kita mungkin pernah merasa kesulitan mencari hijab yang pas: ada yang bahannya terlalu panas, mudah kusut seharian, ukurannya kurang pas, atau modelnya terasa kaku dan tidak cocok untuk aktivitas sehari-hari. Kami memahami betul perasaan itu, karena itulah kami hadir untuk memberikan solusi terbaik untukmu.</p>
+       <p>Di sini, setiap helai kain dipilih dengan teliti dan diseleksi secara ketat. Kami hanya menggunakan bahan-bahan berkualitas tinggi yang sangat lembut di kulit, adem dipakai seharian, tidak melar, dan tidak mudah luntur warnanya. Kamu bisa bergerak bebas tanpa rasa sempit, gerah, atau khawatir penampilan berantakan di tengah hari.</p>
+       <p>Koleksi kami dirancang khusus agar serasi dengan segala gaya dan kebutuhanmu. Mulai dari model simpel untuk ke kampus atau kerja, elegan untuk acara keluarga, hingga gaya kekinian yang tetap sopan untuk jalan-jalan bersama teman. Tersedia beragam pilihan warna lembut hingga cerah, agar kamu bisa menyesuaikan dengan busana apa pun di lemari.</p>
+       <p>Kami juga memperhatikan setiap detail jahitan dan pemotongan agar nyaman dipakai berbagai bentuk wajah dan kepala. Baik kamu menyukai hijab segi empat, pashmina, maupun model instan yang praktis dipakai berangkat buru-buru, semuanya kami siapkan dengan standar kualitas yang sama tinggi.</p>
+       <Jangan biarkan stok terbatas membuatmu kehabisan warna kesayangan. Banyak varian kami yang sering ludes lebih cepat karena banyak dicari, jadi pastikan kamu memilih dan memesan sekarang sebelum kehabisan. Dapatkan juga penawaran spesial dan kesempatan gratis ongkir untuk pembelian dalam jumlah tertentu.
+
+        
+          <!-- Bagian Katalog Produk -->
+        <h2 class="section-title" id="produk" align="center">🧕Koleksi Terlaris🧕</h2>
+        
+      <div align="center">
+            <div class="produk-card">
+                <a href="https://s.shopee.co.id/BRjyiiDPc" target="_blank">
+                    <img src="img/GHAZWAH2.jpeg" width="150">
+                <h3>beli disini hijab paris premium</h3>
+                <p class="harga">Rp 26.000</p>
+                <button class="btn" onclick="pilihKeBooking('instan', 1)">Pesan Sekarang</button>
+            </div>
+             <div class="produk-card">
+                <a href="https://s.shopee.co.id/7VEKkjlkNc" target="_blank">
+                    <img src="img/GHAZWAH1.jpeg" width="150">
+                <h3>beli disini hijab VISCOSE</h3>
+                <p class="harga">Rp 60.000</p>
+                <button class="btn" onclick="pilihKeBooking('instan', 1)">Pesan Sekarang</button>
+            </div>
+        </div>
+
+        <!-- Bagian Formulir Booking -->
+        <h2 class="section-title" id="booking" align="center">Formulir Booking / Pre-Order</h2>
+        <div class="booking-section" align="center">
+            <form id="formBooking" onsubmit="prosesBooking(event)">
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap:</label>
+                    <input type="text" id="nama" required placeholder="Masukkan nama Anda">
+                </div>
+                
+                <div class="form-group">
+                    <label for="whatsapp">Nomor WhatsApp:</label>
+                    <input type="tel" id="whatsapp" required placeholder="Contoh: 08123456xxx">
+                </div>
+
+                <div class="form-group">
+                    <label for="jenis-hijab">Pilih Jenis Hijab:</label>
+                    <select id="jenis-hijab" onchange="hitungTotal()">
+                        <option value="Paris Premium" data-harga="26000">Paris Premium (Rp 26.000)</option>
+                        <option value="Vischose" data-harga="60000">Pashmina Vischose (Rp 60.000)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="jumlah">Jumlah Barang:</label>
+                    <input type="number" id="jumlah" value="1" min="1" oninput="hitungTotal()">
+                </div>
+
+                <div class="total-box">
+                    <p>Total Pembayaran: <strong id="tampil-total">Rp 26.000</strong></p>
+                </div>
+
+                <button type="submit" class="btn" style="padding: 12px;">Konfirmasi & Ambil Slot</button>
+            </form>
+        </div>
+    </div>
+         <!-- Letak Footer -->
+         <tr>
+            <td bgcolor="white" width="1000" height="15" align="center" valign="bottom">
+                <b>Copyright &copy; 2026 - Rahma Nazhira  [251011750234]</b>
+
+            </td>
+         </tr>
+          <!-- Bagian Logika JavaScript -->
+    <script>
+        // 1. Fungsi otomatis menghitung total harga
+        function hitungTotal() {
+            const selectHijab = document.getElementById("jenis-hijab");
+            const jumlah = document.getElementById("jumlah").value;
+            
+            // Ambil harga dari atribut data-harga
+            const hargaSatuan = selectHijab.options[selectHijab.selectedIndex].getAttribute("data-harga");
+            
+            // Validasi input angka
+            const totalHarga = (jumlah > 0) ? hargaSatuan * jumlah : 0;
+            
+            // Format tampilan mata uang rupiah ke layar
+            document.getElementById("tampil-total").textContent = "Rp " + totalHarga.toLocaleString('id-ID');
+        }
+
+        // 2. Fungsi jika user mengklik tombol "Pesan Sekarang" di katalog produk atas
+        function pilihKeBooking(idProduk, jml) {
+            document.getElementById("jenis-hijab").value = idProduk;
+            document.getElementById("jumlah").value = jml;
+            hitungTotal();
+            
+            // Otomatis scroll layar menuju formulir booking
+            document.getElementById("booking").scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // 3. Fungsi memproses data saat form dikirim (submit)
+        function prosesBooking(event) {
+            event.preventDefault(); // Mencegah halaman reload otomatis setelah klik kirim
+
+            const nama = document.getElementById("nama").value;
+            const wa = document.getElementById("whatsapp").value;
+            const selectHijab = document.getElementById("jenis-hijab");
+            const namaHijab = selectHijab.options[selectHijab.selectedIndex].text;
+            const jumlah = document.getElementById("jumlah").value;
+            const total = document.getElementById("tampil-total").textContent;
+
+            // Memunculkan pesan sukses booking
+            alert(`Pemesanan Berhasil!\n\nHalo ${nama}, slot pre-order untuk ${jumlah}x ${namaHijab} telah kami amankan.\nTotal: ${total}.\nKami akan menghubungi nomor WhatsApp ${wa} Anda segera.`);
+</table>
+</body>
+</html>
